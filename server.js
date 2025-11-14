@@ -11,7 +11,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type']
 }));
 
-app.options('*', cors());
+app.options('/*', cors());
 
 
 const PORT = process.env.PORT || 1234;
