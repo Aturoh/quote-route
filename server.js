@@ -37,6 +37,11 @@ app.post("/quote", async (req, res) =>{
 }
 })
 
+setInterval(() => {
+  fetch("https://quote-api-f7ve.onrender.com/quote");
+}, 1000 * 60 * 14); // every 14 minutes
+
+
 
 app.get("/me", (req, res) => {
   res.send("Hell front end");
